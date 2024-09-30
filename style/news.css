@@ -43,6 +43,7 @@ header{
     font-family: var(--text-font-family);
     font-size: 14px;
     font-weight: 400;
+    margin: 10px 0 30px;
 }
 .top-content-news{
     background-color: var(--article-color);
