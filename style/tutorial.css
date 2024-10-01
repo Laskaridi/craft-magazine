@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-color: rgb(247, 232, 241);
+    --article-color:white;
+    --text-title-color:black;
+    --text2-color:rgb(231, 183, 0);
+    --title-font-family: Suse;
+    --text-font-family: Poppins;
+    --title1-font-size:48px;
+    --title2-font-size:32px;
+    --text1-font-size:20px;
+    --text2-font-size:16px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(233, 233, 233);
+}
+main{
+    width: 87vw;
+    margin: 0 auto;
+}
+header{
+  background-color: var(--article-color);
+}
+.mynav a{
+    font-family: var(--text-font-family);
+    font-weight: 500;
+}
+.tutorial{
+    background-color: var(--bg-color);
+    padding: 25px 90px;
+}
+.title-news h4{
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    margin: 10px 0 30px;
+}
+.top-content-tutorial{
+    background-color: var(--article-color);
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 30px;
+}
+.top-content-tutorial h1{
+    font-family: var(--title-font-family);
+    font-size: var(--title1-font-size);
+    font-weight: 500;
+}
+.top-content-tutorial h3{
+    font-family: var(--text-font-family);
+    font-size: var(--text1-font-size);
+    font-weight: 500;
+}
+.left-content{
+    width: 25%;
+}
+.right-content{
+    width: 73%;
+}
+.left-content-item{
+    width: 100%;
+    background-color: var(--article-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.left-content-item img{
+    width: 18%;
+}
+.left-content-item h3, h4{
+    font-family: var(--text-font-family);
+}
+.left-content h3{
+    text-transform: uppercase;
+}
+.left-content-text{
+    margin: auto;
+}
+.left-content h5{
+    font-family: var(--text-font-family);
+    font-size: var(--text2-font-size);
+    padding-bottom: 10px;
+}
+.left-content a{
+    color: var(--text-title-color);
+    text-decoration: none;
+}
+.left-content a:hover{
+    color: var(--text2-color);
+}
+.left-content a:active{
+    color: var(--text2-color);
+}
+.article-item{
+    width: 32%;
+    background-color: var(--article-color);
+    margin: 25px 0;
+    padding: 5px;
+ }
+ .article-item video{
+    width: 100%;
+ }
+ .news-cont{
+    margin: 10px 20px 0px 20px;
+ }
+ .news-cont h3, h4, h5, h6{
+    font-family: var(--title-font-family);
+    font-weight: 600;
+    text-align: left;
+ }
+ .news-cont h6{
+    color: var(--text2-color);
+    font-size: var(--text2-font-size);
+    padding-bottom: 10px;
+ }
+ .news-cont h5{
+    color: var(--text1-color);
+    font-size: var(--text2-font-size);
+    padding-top: 5px;
+ }
+ .news-cont h4{
+    color: var(--text-title-color);
+    font-size: var(--text1-font-size);
+    padding: 0;
+    padding-bottom: 20px;
+ }
+ .news-cont h3{
+   color: var(--text-title-color);
+    font-size: var(--title2-font-size);
+ }
+ .news-cont a{
+   text-decoration: none;
+   color: var(--text-title-color);
+ }
+ .foot-content{
+    padding-top: 40px;
+ }
+ .foot-content a{
+    font-family: var(--text-font-family);
+    text-decoration: none;
+    color: var(--text-title-color);
+    font-size: 14px;
+ }
+ .login-content{
+    background-color: var(--bg-color);
+    padding: 20px 0px;
+ }
+ .login-left h1, p{
+    color: var(--text-title-color);
+    font-family: var(--title-font-family);
+    font-weight: 600;
+ }
+ .login-left, .login-center, .login-right{
+    width: 30%;
+ }
+ .login-left h1{
+    font-size: var(--title2-font-size);
+ }
+ .login-left p{
+    font-size: var(--text2-font-size);
+ }
+ .myinput{
+    background-color: var(--bg-color);
+    padding: 1px 200px 1px 3px;
+ }
+ .login-right p{
+    font-family: var(--text-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    text-align: justify;
+    padding-top: 20px;
+    margin-bottom: 0px;
+ }
+ .mysign{
+    width: 50%;
+    margin-top: 10px;
+ }
+
+
+
+ @media(min-width:1000px) and
+ (max-width:1400px){
+main{
+  width: 100vw;
+}
+.tutorial{
+  padding: 25px 70px;
+}
+.left-content-item img{
+    margin-right: 20px;
+}
+.foot-content{
+    text-align: center;
+ }
+ .foot-img{
+     width: 15%;
+ }
+ .login-content{
+     padding: 25px 10px;
+ }
+ .login-left, .login-right .login-center{
+    width: 27%;
+    }
+    .myinput{
+     padding-right: 100px;
+    }
+    .mysign{
+        width: 30%;
+    }
+}
+
+
+
+ @media(min-width:600px) and
+       (max-width:1000px){
+    main{
+        width: 100vw;
+    }
+    .tutorial{
+        padding: 25px 70px;
+    }
+    .left-content, .right-content{
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .left-content-item{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .left-content h5{
+        text-align: center;
+    }
+    .article-item{
+        width: 100%;
+    }
+    .foot-content{
+        text-align: center;
+     }
+     .foot-img{
+         width: 25%;
+     }
+     .login-content{
+         padding: 25px 10px;
+     }
+     .login-left, .login-right{
+         width: 100%;
+        }
+        .myinput{
+         padding-right: 120px;
+        }
+        .mysign{
+            width: 30%;
+        }
+}
+
+
+
+ @media(max-width:600px){
+    main{
+        width: 100vw;
+    }
+    .tutorial{
+        padding: 25px 10px;
+    }
+    .left-content, .right-content{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .left-content h5{
+        text-align: center;
+    }
+    .article-item{
+        width: 100%;
+    }
+    .foot-content{
+        text-align: center;
+     }
+     .foot-img{
+         width: 12%;
+     }
+     .login-content{
+         padding: 25px 10px;
+     }
+     .login-left, .login-right{
+         width: 100%;
+        }
+        .myinput{
+         padding-right: 120px;
+        }
+}
