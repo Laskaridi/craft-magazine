@@ -235,17 +235,11 @@ header{
         padding-right: 15px;
         padding-bottom: 20px;
     }
-    .right-content-text h3, h4{
-        text-align: center;
-    }
     .related-articles{
         padding: 25px 70px;
     }
     .article-item{
         width: 24%;
-    }
-    .news-cont h4, h6{
-        text-align: center;
     }
     .footer{
         padding: 25px 70px;
@@ -254,7 +248,7 @@ header{
        text-align: center;
     }
     .foot-img{
-        width: 25%;
+        width: 15%;
     }
     .login-content{
         padding: 25px 10px;
@@ -307,17 +301,11 @@ header{
         padding-right: 15px;
         padding-bottom: 20px;
     }
-    .right-content-text h3, h4{
-        text-align: center;
-    }
     .related-articles{
         padding: 25px 70px;
     }
     .article-item{
         width: 100%;
-    }
-    .news-cont h4, h6{
-        text-align: center;
     }
     .footer{
         padding: 25px 70px;

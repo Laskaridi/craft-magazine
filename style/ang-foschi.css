@@ -32,12 +32,9 @@ header{
     font-family: var(--text-font-family);
     font-weight: 500;
 }
-.news{
+.ang-foschi{
     background-color: var(--bg-color);
     padding: 25px 90px;
-}
-.news-content{
-    margin-bottom: 25px;
 }
 .title-news h4{
     font-family: var(--text-font-family);
@@ -45,52 +42,54 @@ header{
     font-weight: 400;
     margin: 10px 0 30px;
 }
-.top-content-news{
+.top-content{
     background-color: var(--article-color);
-    text-align: center;
-    padding: 60px 0;
-    margin-bottom: 30px;
+    padding: 60px;
 }
-.top-content-news h1{
+.left-content, .center-content{
+    width: 35%;
+}
+.right-content{
+    width: 15%;
+    margin: auto 0;
+}
+.circle-img{
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.circle-img img{
+    width: 100%;
+}
+.mylink{
+    width: 45%;
+}
+.center-content h2{
     font-family: var(--title-font-family);
-    font-size: var(--title1-font-size);
-    font-weight: 500;
+    font-weight: 600;
 }
-.top-content-news h3{
+.center-content h3, h5 ,p{
     font-family: var(--text-font-family);
-    font-size: var(--text1-font-size);
-    font-weight: 500;
 }
-.my-grid-news{
-    display: grid;
-    grid-template-columns: 1.86fr 1fr;
-    grid-template-areas: 
-    "left top"
-    "left bottom";
-    column-gap: 20px;
-    row-gap: 20px;
-    align-self: stretch;
-    margin-top: 20px;
- }
- .left-news{
-    grid-area: left;
-    background-color: var(--article-color);
-    padding: 5px;
- }
- .left-news img{
-   width: 100%;
- }
- .top-news{
-    grid-area: top;
+.right-content img{
+    width: 16%;
     display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+}
+.articles{
+    padding: 25px 0;
+}
+.article-item{
+    width: 24%;
     background-color: var(--article-color);
+    margin: 25px 0;
     padding: 5px;
  }
- .bottom-news{
-    grid-area: bottom;
-    display: flex;
-    background-color: var(--article-color);
-    padding: 5px;
+ .article-item img{
+    width: 100%;
  }
  .news-cont{
     margin: 20px 20px 0px 20px;
@@ -123,15 +122,6 @@ header{
  .news-cont a{
    text-decoration: none;
    color: var(--text-title-color);
- }
- .sewing-item{
-    width: 24%;
-    background-color: var(--article-color);
-    margin: 25px 0;
-    padding: 5px;
- }
- .sewing-item img{
-    width: 100%;
  }
  .foot-content{
     padding-top: 40px;
@@ -178,150 +168,142 @@ header{
  }
 
 
- 
 
  @media(min-width:1000px) and
- (max-width:1400px){
-main{
-width: 100vw;
-}
-.news{
-padding: 25px 10px;
-}
-.top-content-news h3{
-width: 80%;
-margin: 0 auto;
-}
-.news-content{
-width: 100%;
-}
-.left-news, .top-news, .bottom-news{
-width: 100%;
-}
-.my-grid-news{
-   grid-template-columns: 1fr 1fr;
-grid-template-areas: 
-    "left left"
-    "top bottom";
-}
-.top-news, .bottom-news{
-   display: block;
-}
-.left-news, .top-news{
-text-align: center;
-}
-.news-cont h3, h4, h5, h6{
-text-align: center;
-}
-.b-img{
-text-align: center;
-margin-bottom: 0;
-}
-.news-cont h3{
-padding-left: 0;
-}
-.sewing-item{
-width: 23%;
-}
-.foot-content{
-text-align: center;
-}
-.login-left, .login-right .login-center{
-width: 27%;
-}
-.myinput{
-padding-right: 100px;
-}
-.mysign{
-width: 30%;
-}
-}
-
-
- @media(min-width:600px) and
-        (max-width:1000px){
-   main{
-      width: 100vw;
-   }
-   .news{
-      padding: 25px 70px;
-   }
-   .top-content-news h3{
-      width: 80%;
-      margin: 0 auto;
-   }
-   .news-content{
-      width: 100%;
-   }
-   .my-grid-news{
-      display: block;
-   }
-   .left-news, .top-news, .bottom-news{
-      width: 100%;
-      display: block;
-   }
-   .left-news, .top-news, .bottom-news img{
-      text-align: center;
-      margin-bottom: 20px;
-   }
-   .b-img{
-      text-align: center;
-   }
-   .news-cont h3{
-      padding-left: 0;
-   }
-   .sewing-item{
-      width: 100%;
-   }
-   .foot-content{
-      text-align: center;
+       (max-width:1400px){
+    main{
+        width: 100vw;
+    }
+    .ang-foschi{
+        padding: 25px 70px;
+    }
+    .title-news h4, i{
+        font-size: 10px;
+    }
+    .top-content{
+        padding: 10px;
+    }
+    .left-content, .center-content{
+        width: 40%;
+        margin: auto 0;
+    }
+    .mylink{
+        width: 100%;
+    }
+    .article-item{
+        width: 24%;
+    }
+    .foot-content{
+        text-align: center;
      }
-     .login-left, .login-right{
-      width: 100%;
+     .foot-img{
+         width: 15%;
      }
-     .myinput{
-      padding-right: 135px;
+     .login-content{
+         padding: 25px 10px;
      }
-     .mysign{
-      width: 30%;
-     }
+     .login-left, .login-right .login-center{
+        width: 27%;
+        }
+        .myinput{
+         padding-right: 100px;
+        }
+        .mysign{
+            width: 30%;
+        }
  }
 
 
- @media(max-width:600px){
-   main{
-      width: 100vw;
-   }
-   .news{
-      padding: 25px 10px;
-   }
-   .my-grid-news{
-      display: block;
-   }
-   .left-news, .top-news, .bottom-news{
-      width: 100%;
-      display: block;
-   }
-   .left-news, .top-news, .bottom-news img{
-      text-align: center;
-      margin-bottom: 20px;
-   }
-   .b-img{
-      text-align: center;
-   }
-   .news-cont h3{
-      padding-left: 0;
-   }
-   .sewing-item{
-      width: 100%;
-   }
-   .foot-content{
-      text-align: center;
+
+ @media(min-width:600px) and
+       (max-width:1000px){
+    main{
+        width: 100vw;
+    }
+    .ang-foschi{
+        padding: 25px 70px;
+    }
+    .top-content{
+        padding: 10px;
+    }
+    .left-content, .center-content{
+        width: 100%;
+        text-align: center;
+        padding: 25px;
+    }
+    .mylink{
+        width: 100%;
+    }
+    .right-content{
+        width: 50%;
+        margin: 10px auto;
+    }
+    .article-item{
+        width: 100%;
+    }
+    .foot-content{
+        text-align: center;
+     }
+     .foot-img{
+         width: 25%;
+     }
+     .login-content{
+         padding: 25px 10px;
      }
      .login-left, .login-right{
-      width: 100%;
+         width: 100%;
+        }
+        .myinput{
+         padding-right: 120px;
+        }
+        .mysign{
+            width: 30%;
+        }
+ }
+
+
+
+ @media(max-width:600px){
+    main{
+        width: 100vw;
+    }
+    .ang-foschi{
+        padding: 25px 10px;
+    }
+    .title-news h4, i{
+        font-size: 10px;
+    }
+    .top-content{
+        padding: 10px;
+    }
+    .left-content, .center-content{
+        width: 100%;
+        text-align: center;
+        padding: 25px;
+    }
+    .mylink{
+        width: 100%;
+    }
+    .right-content{
+        width: 50%;
+     margin: 10px auto;
+    }
+    .article-item{
+        width: 100%;
+    }
+    .foot-content{
+        text-align: center;
      }
-     .myinput{
-      padding-right: 135px;
+     .foot-img{
+         width: 12%;
      }
+     .login-content{
+         padding: 25px 10px;
+     }
+     .login-left, .login-right{
+         width: 100%;
+        }
+        .myinput{
+         padding-right: 120px;
+        }
  }
