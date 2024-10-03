@@ -248,7 +248,7 @@ header{
        text-align: center;
     }
     .foot-img{
-        width: 15%;
+        width: 20%;
     }
     .login-content{
         padding: 25px 10px;
@@ -388,6 +388,6 @@ header{
         width: 100%;
        }
        .myinput{
-        padding-right: 120px;
+        padding-right: 100px;
        }
  }
