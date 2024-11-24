@@ -181,7 +181,7 @@ header{
  
 
  @media(min-width:1000px) and
- (max-width:1400px){
+       (max-width:1400px){
 main{
 width: 100vw;
 }

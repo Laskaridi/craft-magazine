@@ -251,10 +251,28 @@ header{
    background-color: var(--bg-color);
    padding-bottom: 130px;
  }
- .s-item2 img{
-   width: 100%;
+ .controls{
+   display: flex;
+   justify-content: center;
+   margin: 30px;
  }
- .s-item1{
+ .slider{
+   width: 88%;
+   position: relative;
+   overflow: hidden;
+   margin: 0 auto;
+ }
+ .slides{
+   display: flex;
+   justify-content: space-between;
+   column-gap: 25px;
+   padding: 0 50px;
+   transition: transform 0.5s ease-in-out;
+ }
+ .slide{
+   width: 19%;   
+ }
+ .prev, .next{
    padding: 0 30px;
  }
  .mypad{
@@ -400,12 +418,6 @@ header{
          .tools-content{
             padding: 45px 15px 0 15px;
          }
-         .tools-flex{
-            
-         }
-         .tools-item{
-            
-         }
          .tools-center-t{
             position: relative;
             top: -190px;
@@ -427,18 +439,27 @@ header{
          .sponsors{
             padding: 0;
          }
-         .s-item1{
-            width: 15%;
-            padding: 0 50px;
+         .slider{
+            width: 90%;
+         }
+         .slides{
+            padding: 0;
+            column-gap: 25px;
+         }
+         .slide{
+            width: 18%;
+         }
+         .sponsors{
+            padding: 0;
+         }
+         .prev, .next{
+            width: 10%;
          }
         .mymarg2{
          margin: 0 12px;
         }
         .mypad{
-         padding-left: 20px;
-        }
-        .mypad h3{
-         display: none;
+         padding: 75px 50px 0;
         }
         .invite{
          margin: -80px 0px 0px;
@@ -542,8 +563,7 @@ header{
          .tutorial-content{
             width:32%;
             margin-bottom: 20px;
-         }
-         
+         }  
          .s-content{
             background-color: var(--article-color);
          }
@@ -553,18 +573,27 @@ header{
          .sponsors{
             padding: 0;
          }
-         .s-item1{
-            width: 15%;
-            padding: 0 50px;
+         .slider{
+            width: 90%;
+         }
+         .slides{
+            padding: 0;
+            column-gap: 25px;
+         }
+         .slide{
+            width: 18%;
+         }
+         .sponsors{
+            padding: 0;
+         }
+         .prev, .next{
+            width: 10%;
          }
         .mymarg2{
          margin: 0 12px;
         }
         .mypad{
-         padding-left: 20px;
-        }
-        .mypad h3{
-         display: none;
+         padding: 75px 50px 0;
         }
         .invite{
          margin: -80px 0px 0px;
@@ -671,24 +700,27 @@ header{
          .s-content{
             background-color: var(--article-color);
          }
-         .s-item2:nth-child(2), .s-item2:nth-child(3), .s-item2:nth-child(4){
-            display: none;
+         .slider{
+            width: 90%;
+         }
+         .slides{
+            padding: 0;
+            column-gap: 25px;
+         }
+         .slide{
+            width: 30%;
          }
          .sponsors{
             padding: 0;
          }
-         .s-item1{
+         .prev, .next{
             width: 15%;
-            padding: 0 50px;
          }
         .mymarg2{
          margin: 0 12px;
         }
         .mypad{
-         padding-left: 20px;
-        }
-        .mypad h3{
-         display: none;
+         padding: 75px 45px 0;
         }
         .invite{
          margin: -80px 0px 0px;
@@ -797,23 +829,27 @@ header{
    .s-content{
       background-color: var(--article-color);
    }
-   .s-item2:nth-child(2), .s-item2:nth-child(3), .s-item2:nth-child(4){
-      display: none;
+   .slider{
+      width: 73%;
+   }
+   .slides{
+      padding: 0;
+      column-gap: 20px;
+   }
+   .slide{
+      width: 45%;
    }
    .sponsors{
       padding: 0;
    }
-   .s-item1{
+   .prev, .next{
       width: 15%;
+   }
+   .mypad{
+      padding: 75px 25px 0;
    }
   .mymarg2{
    margin: 0 12px;
-  }
-  .mypad{
-   padding-left: 142px;
-  }
-  .mypad h3{
-   display: none;
   }
   .invite{
    margin: -80px 0px 0px;
@@ -927,23 +963,27 @@ header{
    .s-content{
       background-color: var(--article-color);
    }
-   .s-item2:nth-child(2), .s-item2:nth-child(3), .s-item2:nth-child(4){
-      display: none;
+   .slider{
+      width: 90%;
+   }
+   .slides{
+      padding: 0;
+      column-gap: 20px;
+   }
+   .slide{
+      width: 45%;
    }
    .sponsors{
       padding: 0;
    }
-   .s-item1{
+   .prev, .next{
       width: 15%;
    }
   .mymarg2{
    margin: 0 12px;
   }
   .mypad{
-   padding-left: 112px;
-  }
-  .mypad h3{
-   display: none;
+   padding: 75px 25px 0;
   }
   .invite{
    margin: -80px 0px 0px;

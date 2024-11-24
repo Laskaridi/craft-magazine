@@ -91,27 +91,21 @@
         <div class="border border-1-bl border-dark-subtle"></div>
         <div class="d-flex justify-content-lg-start">
             
-            <select id="droplist" class="mylist">
-                <option value="01">Province</option>
-                <option value="02">Basilicata</option>
-                <option value="03">Calabria</option>
-                <option value="04">Emilia-Romagna</option>
-                <option value="05">Friuli Venezia Giulia</option>
-                <option value="06">Puglia</option>
-                <option value="07">Sicily</option>
-                <option value="08">Veneto</option>
+            <select id="country-select" class="mylist">
+                <option value="">-- Select region --</option>
+                <option value="bs">Basilicata</option>
+                <option value="cl">Calabria</option>
+                <option value="er">Emilia-Romagna</option>
+                <option value="fg">Friuli Venezia Giulia</option>
+                <option value="pg">Puglia</option>
+                <option value="sc">Sicily</option>
+                <option value="vn">Veneto</option>
             </select>
-            <select id="droplist" class="mylist">
-                <option value="01">City</option>
-                <option value="02">Amalfi</option>
-                <option value="03">Aversa</option>
-                <option value="04">Caserta</option>
-                <option value="05">Eboli</option>
-                <option value="06">Naples</option>
-                <option value="07">Portici</option>
-                <option value="08">Torre del Greco</option>
+            <select id="city-select" class="mylist">
+                <option value="">-- Select city --</option>
             </select>
         </div>
+        
         <div class="d-xxl-flex courses-content">
             <div class="myimg"><img src="img-courses/image1.png" alt="news-photo"></div>
             <div class="courses-content-left">
@@ -264,7 +258,7 @@
         </section>
     </main>
     
-
+    <script src="script/courses.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
