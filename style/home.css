@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --bg-color: rgb(247, 232, 241);
+    --bg-color: rgb(255 242 220);
     --article-color:white;
     --text-title-color:black;
     --text2-color:rgb(231, 183, 0);
@@ -34,70 +34,13 @@ header{
     font-family: var(--text-font-family);
     font-weight: 500;
 }
-.top-content{
-    width: 100%;
-    height: 585px;
-    background-image: url(../img-page1/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.link-base-item{
+   display: flex;
+   justify-content: space-between;
 }
-.my-grid-top{
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-}
-
-.item1, .item3, .item4{
-    height: 148px;
-    display: flex;
-    background-color: white;
-    border-radius: 3px;
-    margin: 0px 100px 0px 135px;
-    padding: 7px;
-}
-.item1{
-    margin-top: 40px;
-    grid-column-start: 2;
-}
-.item2{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    align-self: end;
-    margin-left: 45px;
-}
-.item3{
-    grid-column-start: 2;
-    margin-top: 25px;
-}
-.item4{
-    margin-top: 25px;
-    grid-row-start: 3;
-}
-.item-cont h3, h4{
+.link-item{
    font-family: var(--title-font-family);
-   font-weight: 500;
-   padding: 15px 20px;
 }
-.item-cont h4{
-    text-align: left;
- }
- .item-cont h1{
-    color: var(--text-title-color);
-    font-size: var(--text1-font-size);
- }
- .item-cont a{
-    text-decoration: none;
- }
- .item2 h2, h3{
-    color: var(--article-color);
-    font-family: var(--title-font-family);
-    padding-left: 50px;
- }
- .item2 h2{
-    font-size: 42px;
- }
- .item2 h3{
-    font-size: var(--text2-font-size);
- }
  .news-container{
     background-color: var(--bg-color);
     padding: 40px 70px 80px 70px;
@@ -176,7 +119,7 @@ header{
     padding-bottom: 40px;
  }
  .news-cont h3{
-   color: var(--text-title-color);
+    color: var(--text-title-color);
     font-size: var(--title2-font-size);
  }
  .news-cont a{
@@ -240,6 +183,14 @@ header{
    font-family: var(--title-font-family);
    font-weight: 600;
  }
+ .tutorial-content h1{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+ .tutorial-content h1:hover{
+   white-space: wrap;
+ }
  .tutorial-content h3{
    color: var(--text2-color);
  }
@@ -251,29 +202,44 @@ header{
    background-color: var(--bg-color);
    padding-bottom: 130px;
  }
- .controls{
-   display: flex;
-   justify-content: center;
-   margin: 30px;
- }
- .slider{
-   width: 88%;
+ .slider {
+   width: 93%;
+   margin: auto;
    position: relative;
    overflow: hidden;
-   margin: 0 auto;
  }
- .slides{
+ .slider-wrapper {
    display: flex;
-   justify-content: space-between;
-   column-gap: 25px;
-   padding: 0 50px;
+   column-gap: 20px;
    transition: transform 0.5s ease-in-out;
  }
- .slide{
-   width: 19%;   
+ .slide {
+   width: 24%;
  }
- .prev, .next{
-   padding: 0 30px;
+ .slide img {
+   width: 100%;
+ }
+ .arrow {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   padding: 2px 2px 0;
+   cursor: pointer;
+   z-index: 10;
+   font-size: 18px;
+   border-radius: 50%;
+ }
+ .arrow.left {
+   left: 10px;
+ }
+ .arrow.right {
+   right: 10px;
+ }
+ .arrow:hover {
+   background: rgba(0, 0, 0, 0.8);
  }
  .mypad{
    padding: 75px 120px 0;
@@ -281,47 +247,12 @@ header{
  .mymarg2{
    margin: 0 120px 25px;
  }
- .invite{
-   background-color: var(--bg-color);
-   padding: 70px 90px;
- }
- .inv-flex{
-   background-color: var(--article-color);
- }
- .inv-left{
-   width: 55%;
-   padding: 74px;
- }
- .inv-right{
-   width: 45%;
- }
-.inv-left h2, h3, p{
-   font-family: var(--title-font-family);
-   font-weight: 600;
-}
-.inv-left h2{
-   font-size: var(--title1-font-size);
-}
-.inv-img img{
-   width: 100%;
-   height: 150px;
-}
-.inv-content h2, h3, h5{
-   font-family: var(--text-font-family);
-   color: var(--article-color);
-}
-.inv-flex-r1{
-   background-color: #17c1ff;
-}
-.inv-flex-r2{
-   background-color: #f5994e;
-}
 .login{
-   background-color: var(--article-color);
+   background-color: var(--bg-color);
    padding: 70px 90px;
 }
 .login-content{
-   background-color: var(--bg-color);
+   background-color: var(--article-color);
    padding: 70px 80px;
 }
 .login-left h1, p{
@@ -344,7 +275,6 @@ header{
    padding: 15px 135px;
 }
 .myinput{
-   background-color: var(--bg-color);
    padding: 1px 200px 1px 3px;
 }
 .login-right p{
@@ -359,41 +289,46 @@ header{
 }
 .mysign{
    width: 44%;
-}
-.footer{
-   background-color: var(--bg-color);
-   padding: 40px 90px 70px;
-}
-.foot-content{
-   padding-top: 40px;
-}
-.foot-content a{
+   background-color: rgb(224 247 226);
    font-family: var(--text-font-family);
-   text-decoration: none;
-   color: var(--text-title-color);
-   font-size: 14px;
+   font-size: 18px;
+   font-weight: 500;
+   border: 1px solid gray;
 }
+.mysign:hover{
+   background-color: gray;
+   color: white;
+}
+.login-message, .error-message{
+   display: none; 
+   font-family: var(--text-font-family);
+   margin-top: 10px;
+}
+.error-message{
+ color: red;
+ margin: 0;
+ padding-top: 5px;
+ font-family: var(--text-font-family);
+ font-size: 12px;
+ font-weight: 400;
+}
+.login-message{
+   color: green;
+   font-family: var(--text-font-family);
+   font-size: 16px;
+   font-weight: 500;
+}
+footer{
+   background-color: var(--bg-color);
+   padding: 40px 90px;
+}
+
 
 
 @media(min-width:1200px) and 
       (max-width:1400px){
          main{
             width: 100vw;
-         }
-         .top-content{
-            margin-top: -39px;
-            padding-top: 70px;
-         }
-         .my-grid-top{
-            display: block;
-         }
-         .item2{
-            display: none;
-         }
-         .item1, .item3, .item4{
-            width: 40%;
-            margin: 0px auto;
-            margin-bottom: 20px;
          }
          .my-grid-news{
             display: block;
@@ -461,25 +396,6 @@ header{
         .mypad{
          padding: 75px 50px 0;
         }
-        .invite{
-         margin: -80px 0px 0px;
-         padding: 0;
-        }
-        .inv-left, .inv-right{
-         width: 100%;
-        }
-        .inv-left h2{
-         font-size: var(--title2-font-size);
-        }
-        .inv-img img{
-         height: 100%;
-        }
-        .inv-content1, .inv-content2{
-         padding-bottom: 20px;
-        }
-        .inv-left{
-         background-color: var(--bg-color);
-        }
         .login-right, .myinput, .login-left{
          width: 100%;
          padding: 2px 25px;
@@ -492,10 +408,7 @@ header{
          font-size: var(--text2-font-size);
         }
         .mysign{
-         width: 60%;
-        }
-        .foot-content{
-         text-align: center;
+         width: 35%;
         }
       }
 
@@ -505,21 +418,6 @@ header{
       (max-width:1200px){
          main{
             width: 100vw;
-         }
-         .top-content{
-            margin-top: -39px;
-            padding-top: 70px;
-         }
-         .my-grid-top{
-            display: block;
-         }
-         .item2{
-            display: none;
-         }
-         .item1, .item3, .item4{
-            width: 50%;
-            margin: 0px auto;
-            margin-bottom: 20px;
          }
          .my-grid-news{
             display: block;
@@ -595,29 +493,10 @@ header{
         .mypad{
          padding: 75px 50px 0;
         }
-        .invite{
-         margin: -80px 0px 0px;
-         padding: 0;
-        }
-        .inv-left, .inv-right{
-         width: 100%;
-        }
-        .inv-left h2{
-         font-size: var(--title2-font-size);
-        }
-        .inv-img img{
-         height: 100%;
-        }
-        .inv-content1, .inv-content2{
-         padding-bottom: 20px;
-        }
         .login, .login-right, .myinput, .login-left{
          width: 100%;
          padding: 0;
          text-align: center;
-        }
-        .inv-left{
-         background-color: var(--bg-color);
         }
         .login-left h1{
          font-size: var(--title2-font-size);
@@ -626,10 +505,7 @@ header{
          font-size: var(--text2-font-size);
         }
         .mysign{
-         width: 50%;
-        }
-        .foot-content{
-         text-align: center;
+         width: 30%;
         }
       }
 
@@ -639,20 +515,8 @@ header{
          main{
             width: 100vw;
          }
-         .top-content{
-            margin-top: -39px;
-            padding-top: 70px;
-         }
-         .my-grid-top{
+         .link-base-item{
             display: block;
-         }
-         .item2{
-            display: none;
-         }
-         .item1, .item3, .item4{
-            width: 60%;
-            margin: 0px auto;
-            margin-bottom: 20px;
          }
          .my-grid-news{
             display: block;
@@ -722,24 +586,6 @@ header{
         .mypad{
          padding: 75px 45px 0;
         }
-        .invite{
-         margin: -80px 0px 0px;
-         padding: 0;
-        }
-        .inv-left, .inv-right{
-         width: 100%;
-        }
-        .inv-left h2{
-         font-size: var(--title2-font-size);
-        }
-        .inv-img img{
-         height: 100%;
-        }
-        .inv-content1, .inv-content2{
-         display: grid;
-         place-items: center;
-         padding-bottom: 20px;
-        }
         .login, .login-content{
          padding: 20px;
         }
@@ -748,17 +594,11 @@ header{
          padding: 2px 25px;
          text-align: center;
         }
-        .inv-left{
-         background-color: var(--bg-color);
-        }
         .login-left h1{
          font-size: var(--title2-font-size);
         }
         .login-left p{
          font-size: var(--text2-font-size);
-        }
-        .foot-content{
-         text-align: center;
         }
       }
 
@@ -768,20 +608,8 @@ header{
    main{
       width: 100vw;
    }
-   .top-content{
-      margin-top: -39px;
-      padding-top: 70px;
-   }
-   .my-grid-top{
+   .link-base-item{
       display: block;
-   }
-   .item2{
-      display: none;
-   }
-   .item1, .item3, .item4{
-      width: 90%;
-      margin: 0px auto;
-      margin-bottom: 20px;
    }
    .my-grid-news{
       display: block;
@@ -830,7 +658,7 @@ header{
       background-color: var(--article-color);
    }
    .slider{
-      width: 73%;
+      width: 90%;
    }
    .slides{
       padding: 0;
@@ -851,40 +679,16 @@ header{
   .mymarg2{
    margin: 0 12px;
   }
-  .invite{
-   margin: -80px 0px 0px;
-   padding: 0;
-  }
-  .inv-left, .inv-right{
-   width: 100%;
-  }
-  .inv-left h2{
-   font-size: var(--title2-font-size);
-  }
-  .inv-img img{
-   height: 100%;
-  }
-  .inv-content1, .inv-content2{
-   display: grid;
-   place-items: center;
-   padding-bottom: 20px;
-  }
   .login, .login-right, .myinput, .login-left{
    width: 100%;
    padding: 0;
    text-align: center;
-  }
-  .inv-left{
-   background-color: var(--bg-color);
   }
   .login-left h1{
    font-size: var(--title2-font-size);
   }
   .login-left p{
    font-size: var(--text2-font-size);
-  }
-  .foot-content{
-   text-align: center;
   }
 }
 
@@ -893,23 +697,11 @@ header{
    main{
       width: 100vw;
    }
-   .top-content{
-      margin-top: -39px;
-      padding-top: 70px;
-   }
-   .news-container{
-      padding: 40px 0 80px;
-   }
-   .my-grid-top{
+   .link-base-item{
       display: block;
    }
-   .item2{
-      display: none;
-   }
-   .item1, .item3, .item4{
-      width: 100%;
-      margin: 0px auto;
-      margin-bottom: 20px;
+   .news-container{
+      padding: 40px 20px 80px;
    }
    .my-grid-news{
       display: block;
@@ -930,6 +722,9 @@ header{
    }
    .news-cont h3{
       padding-left: 0;
+   }
+   .news-cont h4{
+      padding-bottom: 10px;
    }
    .tools{
       padding: 30px;
@@ -954,7 +749,7 @@ header{
       margin-top: 0;
    }
    .tutorial{
-      padding: 50px 10px;
+      padding: 50px 20px;
    }
    .tutorial-content{
       width: 100%;
@@ -985,24 +780,6 @@ header{
   .mypad{
    padding: 75px 25px 0;
   }
-  .invite{
-   margin: -80px 0px 0px;
-   padding: 0;
-  }
-  .inv-left, .inv-right{
-   width: 100%;
-  }
-  .inv-left h2{
-   font-size: var(--title2-font-size);
-  }
-  .inv-img img{
-   height: 100%;
-  }
-  .inv-content1, .inv-content2{
-   display: grid;
-   place-items: center;
-   padding-bottom: 20px;
-  }
   .login, .login-right, .myinput, .login-left{
    width: 100%;
    padding: 0;
@@ -1011,19 +788,13 @@ header{
   .login-content{
    padding: 40px 30px;
   }
-  .inv-left{
-   background-color: var(--bg-color);
-  }
   .login-left h1{
    font-size: var(--title2-font-size);
   }
   .login-left p{
    font-size: var(--text2-font-size);
   }
-  .footer{
+  footer{
    padding: 30px 40px;
-  }
-  .foot-content{
-   text-align: center;
   }
 }

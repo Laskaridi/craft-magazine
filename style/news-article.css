@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
@@ -32,6 +31,13 @@ header{
     font-family: var(--text-font-family);
     font-weight: 500;
 }
+.link-base-item{
+    display: flex;
+    justify-content: space-between;
+ }
+ .link-item{
+    font-family: var(--title-font-family);
+ }
 .news-article{
     background-color: #f5f6f6;
     padding: 25px 90px;
@@ -41,6 +47,9 @@ header{
     font-size: 14px;
     font-weight: 400;
     margin: 10px 0 30px;
+}
+.title-news h4:hover{
+    font-weight: 700;
 }
 .news-article img{
     width: 100%;
@@ -148,40 +157,34 @@ header{
    text-decoration: none;
    color: var(--text-title-color);
  }
- .footer{
+ .login{
     background-color: var(--bg-color);
-    margin-top: -17px;
-    padding: 0 95px 60px;
- }
- .foot-content{
-    padding-top: 40px;
- }
- .foot-content a{
-    font-family: var(--text-font-family);
-    text-decoration: none;
-    color: var(--text-title-color);
-    font-size: 14px;
+    padding: 70px 90px;
  }
  .login-content{
-    background-color: var(--bg-color);
-    padding: 20px 0px;
+    background-color: var(--article-color);
+    padding: 70px 80px;
  }
  .login-left h1, p{
     color: var(--text-title-color);
     font-family: var(--title-font-family);
     font-weight: 600;
  }
- .login-left, .login-center, .login-right{
-    width: 30%;
+ .login-left{
+    width: 50%;
  }
  .login-left h1{
-    font-size: var(--title2-font-size);
+    font-size: var(--title1-font-size);
+    padding: 20px 0 40px;
  }
  .login-left p{
-    font-size: var(--text2-font-size);
+    font-size: var(--title2-font-size);
+ }
+ .login-right{
+    width: 50%;
+    padding: 15px 135px;
  }
  .myinput{
-    background-color: var(--bg-color);
     padding: 1px 200px 1px 3px;
  }
  .login-right p{
@@ -190,11 +193,44 @@ header{
     font-weight: 400;
     text-align: justify;
     padding-top: 20px;
-    margin-bottom: 0px;
+ }
+ .myradio{
+    background-color: var(--bg-color);
  }
  .mysign{
-    width: 50%;
+    width: 44%;
+    background-color: rgb(224 247 226);
+    font-family: var(--text-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid gray;
+ }
+ .mysign:hover{
+    background-color: gray;
+    color: white;
+ }
+ .login-message, .error-message{
+    display: none; 
+    font-family: var(--text-font-family);
     margin-top: 10px;
+ }
+ .error-message{
+  color: red;
+  margin: 0;
+  padding-top: 5px;
+  font-family: var(--text-font-family);
+  font-size: 12px;
+  font-weight: 400;
+ }
+ .login-message{
+    color: green;
+    font-family: var(--text-font-family);
+    font-size: 16px;
+    font-weight: 500;
+ }
+ footer{
+    background-color: var(--bg-color);
+    padding: 40px 90px;
  }
 
 
@@ -241,29 +277,21 @@ header{
     .article-item{
         width: 24%;
     }
-    .footer{
-        padding: 25px 70px;
+    .login-right, .myinput, .login-left{
+        width: 100%;
+        padding: 2px 25px;
+        text-align: center;
     }
-    .foot-content{
-       text-align: center;
+    .login-left h1{
+        font-size: var(--title2-font-size);
     }
-    .foot-img{
-        width: 20%;
+    .login-left p{
+        font-size: var(--text2-font-size);
     }
-    .login-content{
-        padding: 25px 10px;
+    .mysign{
+        width: 35%;
     }
-    .login-left, .login-right .login-center{
-        width: 27%;
-        }
-        .myinput{
-        padding-right: 100px;
-        }
-        .mysign{
-        width: 30%;
-        }
- }
-
+}
 
 
  @media(min-width:600px) and
@@ -271,6 +299,9 @@ header{
     main{
         width: 100vw;
     }
+    .link-base-item{
+        display: block;
+     }
     .news-article{
         padding: 20px 70px;
     }
@@ -307,27 +338,23 @@ header{
     .article-item{
         width: 100%;
     }
-    .footer{
-        padding: 25px 70px;
-    }
-    .foot-content{
-       text-align: center;
-    }
-    .foot-img{
-        width: 25%;
+    .login, .login-right, .myinput, .login-left{
+        width: 100%;
+        padding: 0px 20px;
+        text-align: center;
     }
     .login-content{
-        padding: 25px 70px;
+        padding: 20px;
     }
-    .login-left, .login-right{
-        width: 100%;
-       }
-       .mysign{
-        width: 30%;
-       }
-       .myinput{
-        padding-right: 120px;
-       }
+    .login-left h1{
+        font-size: var(--title2-font-size);
+    }
+    .login-left p{
+        font-size: var(--text2-font-size);
+    }
+    .mysign{
+        width: 45%;
+    }
  }
 
 
@@ -336,6 +363,9 @@ header{
     main{
         width: 100vw;
     }
+    .link-base-item{
+        display: block;
+     }
     .news-article{
         padding: 20px 10px;
     }
@@ -372,22 +402,21 @@ header{
     .article-item{
         width: 100%;
     }
-    .footer{
-        padding: 25px 10px;
+    .login, .login-content{
+        padding: 20px;
     }
-    .foot-content{
-       text-align: center;
-    }
-    .foot-img{
-        width: 12%;
-    }
-    .login-content{
-        padding: 25px 10px;
-    }
-    .login-left, .login-right{
+    .login-right, .myinput, .login-left{
         width: 100%;
-       }
-       .myinput{
-        padding-right: 100px;
-       }
+        padding: 0px 20px;
+        text-align: center;
+    }
+    .login-left h1{
+        font-size: var(--title2-font-size);
+    }
+    .login-left p{
+        font-size: var(--text2-font-size);
+    }
+    footer{
+        padding: 30px 40px;
+    }
  }
