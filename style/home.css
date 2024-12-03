@@ -209,16 +209,20 @@ header{
    overflow: hidden;
  }
  .slider-wrapper {
+   width: 100%;
    display: flex;
-   column-gap: 20px;
-   transition: transform 0.5s ease-in-out;
+   transition: transform 1s ease-in-out;
  }
  .slide {
-   width: 24%;
- }
- .slide img {
+   flex: 0 0 24%;
+   margin: 0 1%;
+   box-sizing: border-box;
+}
+
+.slide img {
    width: 100%;
- }
+   display: block;
+}
  .arrow {
    position: absolute;
    top: 50%;

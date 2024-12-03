@@ -21,7 +21,13 @@ const showSuccess = (message) => {
   errorMessage.style.display = 'none';
 };
 
-signUpBtn.addEventListener('click', async () => {
+const handleEnterKey = async (event) => {
+  if (event.key === 'Enter') {
+    await handleSignUp();
+  }
+};
+
+const handleSignUp = async () => {
   const name = nameInput.value.trim();
   const email = emailInput.value.trim();
   const consent = agreeRadio.checked ? "agree" : disagreeRadio.checked ? "disagree" : null;
@@ -59,7 +65,13 @@ signUpBtn.addEventListener('click', async () => {
     console.error("Error adding document: ", error);
     showError("An error occurred while saving your data. Please try again later.");
   }
-});
+};
 
+signUpBtn.addEventListener('click', handleSignUp);
+
+nameInput.addEventListener('keydown', handleEnterKey);
+emailInput.addEventListener('keydown', handleEnterKey);
+agreeRadio.addEventListener('keydown', handleEnterKey);
+disagreeRadio.addEventListener('keydown', handleEnterKey);
 
 export {showError, showSuccess};

@@ -136,6 +136,12 @@ header{
     font-size: var(--text1-font-size);
     padding: 0;
     padding-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
+ .news-cont h4:hover{
+    white-space: wrap;
  }
  .news-cont h3{
    color: var(--text-title-color);
